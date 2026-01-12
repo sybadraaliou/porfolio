@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Language switcher (top-right) -->
+    <div id="lang-switcher" aria-hidden="false">
+      <button class="lang-btn active" data-lang="fr" aria-label="Français">🇫🇷</button>
+      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Badra Aliou SY</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Expériences</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Badra Aliou SY</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/badra-aliou.sy@epitech.eu.jpg" alt="My profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" data-i18n="profile.greeting">Bonjour, je suis</p>
+        <h1 class="title">Badra Aliou SY</h1>
+        <p class="section__text__p2" data-i18n="profile.role">Analyste de données et Développeur Full Stack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Badra Aliou SY-stage_data_janvier2026.pdf')"
+            data-i18n="btn.download"
+          >
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            <span data-i18n="btn.contact">Coordonnées</span>
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://github.com/sybadraaliou'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sybadraaliou'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1" data-i18n="about.subtitle">Pour en savoir plus</p>
+      <h1 class="title" data-i18n="about.title">À propos</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ months <br />Revenue Assurance Analyst <br> Orange Finances Mobiles Mali </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Architecte des systèmes d'information<br/>Licence Pro en Informatique de Gestion</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p data-i18n="about.paragraph">
+              Passionné par le développement web & mobile et l'analyse de données, je possède une solide formation en informatique de gestion et data science. Actuellement en Pre Msc (Bac +3) à Epitech, je cherche un stage de 3 à 6 mois à partir de maintenant  une alternance de deux ans à partir d'Octobre 2026.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" data-i18n="experience.subtitle">Découvrez mes</p>
+      <h1 class="title" data-i18n="experience.title">COMPÉTENCES</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS/SASS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL/NoSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/Gitlab</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1" data-i18n="projects.subtitle">Parcourez mes</p>
+      <h1 class="title" data-i18n="projects.title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+
+            <!-- JobBoard -->
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-1.png"
+                alt="Volunteer Desk API"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">JobBoard</h2>
+            <p>Conception et développement d’une plateforme de recrutement en respectant une architecture MVC et une API REST. Le projet a été réalisé en <strong>JavaScript</strong> pour le front-end et en <strong>PHP</strong> pour le back-end, permettant une séparation claire des responsabilités, une meilleure maintenabilité du code et une gestion efficace des offres d’emploi et des candidatures.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/jobBoard'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/jobBoard'"
+              >
+                JS - HP
+              </button>
+            </div>
+          </div>
+
+          <!-- Racing Game -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-2.png"
+                alt="Volunteer Desk Mobile"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Racing Game</h2>
+<p>
+Conception et de développement d’un jeu de course 2D, réalisé en <strong>Java</strong> à l’aide du framework <strong>LibGDX</strong>. Le jeu propose une expérience immersive avec des graphismes attrayants, une jouabilité fluide et des mécanismes de contrôle intuitifs, offrant aux joueurs une aventure palpitante sur la piste.
+</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/racingGame'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/racingGame'"
+              >
+                 JAVA - LibGDX 
+              </button>
+            </div>
+          </div>
+
+          <!-- Docker App  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-2.png"
+                alt="Volunteer Desk Mobile"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Popeye</h2>
+<p>
+  Dockerisation d'une application web complète comprenant une base de données <strong>PostgreSQL</strong>, un back-end <strong>Node.js</strong> et un front-end <strong>Flask</strong>. Chaque composant de l'application est encapsulé dans des conteneurs Docker distincts, facilitant ainsi le déploiement, la gestion des dépendances et la scalabilité de l'application dans divers environnements.
+</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/popeye'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/popeye'"
+              >
+                 Docker 
+              </button>
+            </div>
+          </div>
+
+          <!-- MyTrello -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-3.png"
+                alt="Volunteer Desk Web"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">MyTrello</h2>
+            <h4>En Cours</h4>
+<p>
+Développement d'une application web de gestion de projets inspirée de Trello, utilisant <strong>React</strong> pour le front-end et <strong>Java Spring Boot</strong> pour le back-end. L'application permet aux utilisateurs de créer, organiser et suivre des tâches facilitant ainsi la collaboration en équipe et l'efficacité dans la gestion de projets.
+</p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/myTrello'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/myTrello'"
+              >
+                REACT - JAVA
+              </button>
+            </div>
+          </div>
+      <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-3.png"
+                alt="Volunteer Desk Web"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">FleetOps</h2>
+            <h4>En Cours</h4>
+<p>
+Développement d'une plateforme B2B de gestion de flotte utilitaire en <strong>.NET</strong> et <strong>Angular</strong>, 
+reposant sur une architecture microservices et micro-frontends, avec authentification centralisée via Keycloak et support multi-tenant.
+</p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lebel-hounkanrin/fleetOps'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lebel-hounkanrin/fleetOps'"
+              >
+                ANGULAR - .NET
+              </button>
+            </div>
+          </div>
+
+          <!-- Portfolio -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- <img
+                src="./assets/project-3.png"
+                alt="Volunteer Desk Web"
+                class="project-img"
+              /> -->
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <p>
+Développement d'un portfolio personnel en utilisant <strong>HTML</strong>, <strong>CSS</strong>, et <strong>JavaScript</strong>, avec un design responsive et une interface utilisateur intuitive. Le portfolio met en avant mes compétences, projets et expériences professionnelles, offrant une vitrine en ligne efficace pour les employeurs potentiels et les collaborateurs.
+            </p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/porfolio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sybadraaliou/porfolio'"
+              >
+                HTML - CSS - JS
+              </button>
+            </div>
+          </div>
+    </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1" data-i18n="contact.subtitle">Contact</p>
+      <h1 class="title" data-i18n="contact.title">Contactez-moi</h1>
+      <div class="contact-cards-container">
+        <div class="contact-card">
+          <i class="fas fa-envelope contact-icon"></i>
+          <h3 data-i18n="contact.emailTitle">Email</h3>
+          <p>sybadraaliou01@gmail.com</p>
+          <a href="mailto:sybadraaliou01@gmail.com" class="contact-link" data-i18n="contact.send">Envoyer un message</a>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone contact-icon"></i>
+          <h3 data-i18n="contact.phoneTitle">Téléphone</h3>
+          <p>+33 6 44 84 54 84</p>
+          <a href="tel:+33600000000" class="contact-link" data-i18n="contact.call">Appeler</a>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt contact-icon"></i>
+          <h3 data-i18n="contact.locationTitle">Localisation</h3>
+          <p>Tourcoing, Hauts-de-France</p>
+          <a href="https://www.google.com/maps/place/Tourcoing,+Hauts-de-France" class="contact-link" data-i18n="contact.map">Voir sur la carte</a>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <form id="contact-form" action="mailto:sybadraaliou01@gmail.com" method="post">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Full Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-color-1">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <div class="footer">
+      <footer>
+      <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Expériences</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Badra Aliou SY. All Rights Reserved.</p>
+    </footer>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

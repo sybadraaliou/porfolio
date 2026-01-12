@@ -1,0 +1,32 @@
+@media (max-width: 1024px) {
+  .contact-cards-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    min-width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+  
+  .contact-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .contact-card {
+    width: 100%;
+    max-width: 300px;
+    min-width: auto;
+  }
+
+  #contact {
+    padding: 2rem 1rem;
+  }
+}
